@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"allowJs": false,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"noUncheckedIndexedAccess": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"verbatimModuleSyntax": true
+	}
+}

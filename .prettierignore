@@ -1,0 +1,15 @@
+.yarn
+
+# .gitignore
+**/.cache
+**/.DS_Store
+**/.env
+**/.env.local
+**/.env.production
+**/build
+**/coverage
+**/dist
+**/logs
+**/node_modules
+**/tmp
+**/*.log
