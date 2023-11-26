@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 import { generateColors } from "./commands/colors.js";
 
 function main() {
