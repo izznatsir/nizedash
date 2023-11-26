@@ -5,11 +5,15 @@ import {
 	Outlet,
 	Scripts,
 	ScrollRestoration,
+	useNavigate,
 } from "@remix-run/react";
+import { RouterProvider } from "react-aria-components";
 
-export default function App() {
+export default function Component() {
+	let navigate = useNavigate();
+
 	return (
-		<html lang="en">
+		<html className="h-[100dvh] text-[20px]" lang="en">
 			<head>
 				<meta charSet="utf-8" />
 				<meta
@@ -19,8 +23,10 @@ export default function App() {
 				<Meta />
 				<Links />
 			</head>
-			<body>
-				<Outlet />
+			<body className="contents">
+				<RouterProvider navigate={navigate}>
+					<Outlet />
+				</RouterProvider>
 				<ScrollRestoration />
 				<Scripts />
 				<LiveReload />
