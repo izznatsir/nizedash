@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 43a46ad (cli colors command)
 import * as palette from "@radix-ui/colors";
 import { ColorTranslator } from "colortranslator";
 import fse from "fs-extra/esm";
@@ -169,9 +165,3 @@ export function generateColors({
 		{ encoding: "utf-8" },
 	);
 }
-<<<<<<< HEAD
-=======
-export function generateColors() {}
->>>>>>> 27ca61b (wip cli colors command)
-=======
->>>>>>> 43a46ad (cli colors command)
