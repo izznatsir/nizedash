@@ -1,4 +1,6 @@
+import { UploadIcon } from "@radix-ui/react-icons";
 import type { MetaFunction } from "@remix-run/node";
+import { Button } from "~/components/ui/button";
 
 export const meta: MetaFunction = () => {
 	return [
@@ -9,37 +11,20 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
 	return (
-		<div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-			<h1>Welcome to Remix</h1>
-			<ul>
-				<li>
-					<a
-						target="_blank"
-						href="https://remix.run/tutorials/blog"
-						rel="noreferrer"
-					>
-						15m Quickstart Blog Tutorial
-					</a>
-				</li>
-				<li>
-					<a
-						target="_blank"
-						href="https://remix.run/tutorials/jokes"
-						rel="noreferrer"
-					>
-						Deep Dive Jokes App Tutorial
-					</a>
-				</li>
-				<li>
-					<a
-						target="_blank"
-						href="https://remix.run/docs"
-						rel="noreferrer"
-					>
-						Remix Docs
-					</a>
-				</li>
-			</ul>
+		<div className="flex h-full flex-col items-center justify-center gap-3">
+			<h2>Primary</h2>
+			<Button>Button</Button>
+			<h2>Pending</h2>
+			<Button className="flex items-center gap-2" isPending>
+				<UploadIcon />
+				Button
+			</Button>
+			<h2>Button Link</h2>
+			<Button variant="link">Button Link</Button>
+			<h2>Secondary</h2>
+			<Button variant="secondary">Button</Button>
+			<h2>Ghost</h2>
+			<Button variant="ghost">Button</Button>
 		</div>
 	);
 }
