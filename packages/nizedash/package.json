@@ -6,6 +6,15 @@
 	},
 	"type": "module",
 	"bin": "./dist/bin.js",
+	"exports": {
+		".": {
+			"default": "./dist/index.js",
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 	"scripts": {
 		"build": "tsup"
 	},
