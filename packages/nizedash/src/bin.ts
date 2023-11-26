@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+<<<<<<< HEAD
+=======
+
+>>>>>>> 27ca61b (wip cli colors command)
 import { generateColors } from "./commands/colors.js";
 
 function main() {
