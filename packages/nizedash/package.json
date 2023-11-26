@@ -1,0 +1,22 @@
+{
+	"name": "nizedash",
+	"version": "0.1.0",
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"type": "module",
+	"bin": "./dist/bin.js",
+	"scripts": {
+		"build": "tsup"
+	},
+	"dependencies": {
+		"@radix-ui/colors": "^3.0.0",
+		"colortranslator": "^3.0.2",
+		"fs-extra": "^11.1.1"
+	},
+	"devDependencies": {
+		"@types/fs-extra": "^11.0.4",
+		"tsup": "^8.0.1",
+		"typescript": "^5.3.2"
+	}
+}
